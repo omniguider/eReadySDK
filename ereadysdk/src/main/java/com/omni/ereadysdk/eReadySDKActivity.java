@@ -18,7 +18,6 @@ import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -26,7 +25,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.android.volley.toolbox.NetworkImageView;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -62,8 +60,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.grantland.widget.AutofitTextView;
-
-import static com.omni.ereadysdk.tool.eReadyText.LOG_TAG;
 
 public class eReadySDKActivity extends BaseActivity implements OnMapReadyCallback, GoogleMap.OnInfoWindowCloseListener {
 
