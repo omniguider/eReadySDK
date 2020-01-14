@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DefaultToolbar">
+        <attr name="toolbar_title" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="OmniViewPager">
+        <attr name="slide_paging_enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ItemWithRightArrowView">
+        <attr name="item_text" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ItemWithSwitchView">
+        <attr name="title_text" format="reference" />
+        <attr name="pref_key" format="reference" />
+        <!--<attr name="default_checked_value" format="boolean" />-->
+    </declare-styleable>
+
+    <declare-styleable name="CircleNetworkImageView">
+        <attr name="civ_border_width" format="integer" />
+        <attr name="civ_border_color" format="reference" />
+        <attr name="civ_border_overlay" format="boolean" />
+    </declare-styleable>
+
+</resources>

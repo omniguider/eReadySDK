@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_point_map_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/black">
+
+            <FrameLayout
+                android:id="@+id/fragment_point_map_action_bar_back_fl"
+                android:layout_width="@dimen/action_bar_btn_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="start">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:src="@mipmap/button_back" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/fragment_point_map_action_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/activity_main_btn_around"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_action_bar"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:id="@+id/fragment_point_map_tab_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/fragment_point_map_tab_ll"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/fragment_point_map_tab_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_weight="1"
+                android:background="@color/blue_25"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:singleLine="true"
+                android:text="@string/fragment_favorite_tab_view"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                autofit:minTextSize="12sp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/fragment_point_map_tab_food"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_weight="1"
+                android:background="@color/black_3d"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:singleLine="true"
+                android:text="@string/fragment_favorite_tab_food"
+                android:textColor="@color/gray_a7"
+                android:textSize="18sp"
+                autofit:minTextSize="12sp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/fragment_point_map_tab_shopping"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/black_3d"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:singleLine="true"
+                android:text="@string/fragment_favorite_tab_shopping"
+                android:textColor="@color/gray_a7"
+                android:textSize="18sp"
+                autofit:minTextSize="12sp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/fragment_point_map_tab_hotel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/black_3d"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:singleLine="true"
+                android:text="@string/fragment_favorite_tab_hotel"
+                android:textColor="@color/gray_a7"
+                android:textSize="18sp"
+                autofit:minTextSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white" />
+
+        <FrameLayout
+            android:id="@+id/fragment_point_map_spinner_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/default_padding"
+            android:paddingTop="8dp"
+            android:paddingEnd="@dimen/default_padding"
+            android:paddingBottom="8dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/solid_rectangle_gradient_primary_color_stroke"
+                android:padding="8dp">
+
+                <com.omni.ereadysdk.view.OmniEditText
+                    android:id="@+id/fragment_point_map_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/white"
+                    android:hint="@string/search_main_page_note_title"
+                    android:inputType="text" />
+
+                <ImageView
+                    android:id="@+id/fragment_point_map_search_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:src="@mipmap/icon_search" />
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/fragment_point_map_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fragment_point_map_fab_current_position"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/default_padding"
+        android:layout_marginBottom="100dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/button_location_w" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:ignore="MissingPrefix">
+
+        <include
+            android:id="@+id/fragment_point_map_poi_info"
+            layout="@layout/item_poi_info" />
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

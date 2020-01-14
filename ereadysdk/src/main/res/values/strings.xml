@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ereadysdk</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyC5R4Lvngu6XG68v8HuNxxq8Zn0wGLZV4U</string>
+
+    <string name="activity_main_btn_around">周邊資訊</string>
+    <string name="fragment_favorite_tab_food">經銷商</string>
+    <string name="fragment_favorite_tab_view">景點</string>
+    <string name="fragment_favorite_tab_shopping">換電站</string>
+    <string name="fragment_favorite_tab_hotel">維修站</string>
+
+    <string name="map_page_start_navi">開始導航</string>
+    <string name="search_main_page_note_title">請輸入關鍵字</string>
+
+    <string name="dialog_button_confirm_text">確定</string>
+    <string name="dialog_button_cancel_text">取消</string>
+    <string name="dialog_button_ok_text">好</string>
+    <string name="dialog_button_no_text">否</string>
+    <string name="dialog_title_text_log">Log</string>
+    <string name="dialog_title_text_note">提 示</string>
+    <string name="error_dialog_title_text_normal">請注意</string>
+    <string name="error_dialog_title_text_api">API Error</string>
+    <string name="error_dialog_title_text_unknown">發生未預期錯誤</string>
+    <string name="error_dialog_title_text_json_parse_error">發生未預期的錯誤</string>
+    <string name="error_dialog_title_text_no_network">無連接網路</string>
+    <string name="error_dialog_message_text_no_network">請檢查網路連線</string>
+    <string name="dialog_message_network_connect_not_good">此處無可供服務流量之網路，請移動至適當區域，檢查連線狀況後再試。</string>
+    <string name="dialog_message_loading">載入中......</string>
+
+
+</resources>

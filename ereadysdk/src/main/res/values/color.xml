@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#25afc1</color>
+
+    <color name="blue_25">#25afc1</color>
+    <color name="blue_41">#4192ff</color>
+    <color name="red_91">#913450</color>
+    <color name="red">#ff0000</color>
+    <color name="gray_f3">#f3f3f3</color>
+    <color name="gray_a1">#a1a1a1</color>
+    <color name="gray_d8">#d8d8d8</color>
+    <color name="gray_3d">#3d3d3d</color>
+    <color name="gray_62">#626262</color>
+    <color name="gray_64">#646464</color>
+    <color name="gray_4d">#4d4d4d</color>
+    <color name="gray_e4">#e4e1dc</color>
+    <color name="gray_a4">#a4a4a4</color>
+    <color name="gray_a7">#a7a7a7</color>
+    <color name="gray_ed">#ededef</color>
+    <color name="blue_45">#454f63</color>
+    <color name="gray_14">#1478849e</color>
+    <color name="olive_green">#96bf39</color>
+    <color name="navigation_btn_blue">#0076ff</color>
+    <color name="orange">#ea5413</color>
+    <color name="map_circle_stroke_color">#3b5998</color>
+    <color name="map_circle_fill_color">#804fa0ff</color>
+    <color name="tab_green">#d1d401</color>
+    <color name="black_3d">#3d3d3d</color>
+
+</resources>

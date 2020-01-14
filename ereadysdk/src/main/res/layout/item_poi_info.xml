@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/solid_top_shadow_rectangle_white"
+        android:clickable="true">
+
+        <include
+            android:id="@+id/poi_info_view_header"
+            layout="@layout/item_poi_header" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/poi_info_view_header">
+
+            <LinearLayout
+                android:id="@+id/poi_info_view_ll_info_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_padding"
+                android:layout_marginRight="@dimen/default_padding"
+                android:layout_marginBottom="@dimen/default_padding"
+                android:orientation="vertical">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/poi_info_view_niv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/default_padding"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/poi_info_view_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_padding"
+                    android:lineSpacingExtra="2dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="@dimen/default_padding"
+                    android:paddingRight="@dimen/default_padding"
+                    android:paddingBottom="@dimen/default_padding"
+                    android:textColor="@color/gray_4d" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/item_poi_header_iv_icon_fl"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/transparent">-->
+
+        <!--<com.omni.ereadysdk.view.CircleNetworkImageView-->
+            <!--android:id="@+id/item_poi_header_iv_icon"-->
+            <!--android:layout_width="36dp"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/solid_circle_shadow_white"-->
+            <!--android:paddingStart="6dp"-->
+            <!--android:paddingTop="6dp"-->
+            <!--android:paddingEnd="6dp"-->
+            <!--android:paddingBottom="9dp"-->
+            <!--android:src="@mipmap/store" />-->
+    <!--</FrameLayout>-->
+
+</FrameLayout>
